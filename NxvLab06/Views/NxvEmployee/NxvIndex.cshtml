@@ -1,0 +1,37 @@
+﻿@model List<NxvLab06.Models.NxvEmployee>
+
+@{
+    ViewData["Title"] = "Danh sách nhân viên";
+}
+
+<h2>Danh sách Nhân viên</h2>
+
+<table class="table table-bordered table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>ID</th>
+            <th>Họ tên</th>
+            <th>Ngày sinh</th>
+            <th>Email</th>
+            <th>Điện thoại</th>
+            <th>Lương</th>
+            <th>Trạng thái</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var emp in Model)
+        {
+            <tr>
+                <td>@emp.NxvId</td>
+                <td>@emp.NxvName</td>
+                <td>@emp.NxvBirthDay.ToString("dd/MM/yyyy")</td>
+                <td>@emp.NxvEmail</td>
+                <td>@emp.NxvPhone</td>
+                <td>@emp.NxvSalary.ToString("N0")</td>
+                <td>@(emp.NxvStatus ? "Đang làm" : "Đã nghỉ")</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a class="btn btn-primary" asp-action="NxvCreate">Thêm mới nhân viên</a>

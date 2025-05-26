@@ -9,61 +9,61 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Lab03
 build_property.RootNamespace = Lab03
-build_property.ProjectDir = C:\Users\Admin\Downloads\K23CNT1_NguyenQuangTam_NetCore-main\K23CNT1_NguyenQuangTam_NetCore-main\Lab03\Lab03\
+build_property.ProjectDir = D:\XuanVinh-K23CNT1-NetCore\Lab03\Lab03\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Admin\Downloads\K23CNT1_NguyenQuangTam_NetCore-main\K23CNT1_NguyenQuangTam_NetCore-main\Lab03\Lab03
+build_property.MSBuildProjectDirectory = D:\XuanVinh-K23CNT1-NetCore\Lab03\Lab03
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/Admin/Downloads/K23CNT1_NguyenQuangTam_NetCore-main/K23CNT1_NguyenQuangTam_NetCore-main/Lab03/Lab03/Views/NxvHome/NxvAbout.cshtml]
+[D:/XuanVinh-K23CNT1-NetCore/Lab03/Lab03/Views/NxvHome/NxvAbout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTnh2SG9tZVxOeHZBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Downloads/K23CNT1_NguyenQuangTam_NetCore-main/K23CNT1_NguyenQuangTam_NetCore-main/Lab03/Lab03/Views/NxvHome/NxvIndex.cshtml]
+[D:/XuanVinh-K23CNT1-NetCore/Lab03/Lab03/Views/NxvHome/NxvIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTnh2SG9tZVxOeHZJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Downloads/K23CNT1_NguyenQuangTam_NetCore-main/K23CNT1_NguyenQuangTam_NetCore-main/Lab03/Lab03/Views/NxvHome/_NxvCategoryPartial.cshtml]
+[D:/XuanVinh-K23CNT1-NetCore/Lab03/Lab03/Views/NxvHome/_NxvCategoryPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTnh2SG9tZVxfTnh2Q2F0ZWdvcnlQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Downloads/K23CNT1_NguyenQuangTam_NetCore-main/K23CNT1_NguyenQuangTam_NetCore-main/Lab03/Lab03/Views/Shared/Components/NqtHotProduct/Default.cshtml]
+[D:/XuanVinh-K23CNT1-NetCore/Lab03/Lab03/Views/Shared/Components/NqtHotProduct/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTnF0SG90UHJvZHVjdFxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Downloads/K23CNT1_NguyenQuangTam_NetCore-main/K23CNT1_NguyenQuangTam_NetCore-main/Lab03/Lab03/Views/Shared/Components/_NxvCategoryPartial.cshtml]
+[D:/XuanVinh-K23CNT1-NetCore/Lab03/Lab03/Views/Shared/Components/_NxvCategoryPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX054dkNhdGVnb3J5UGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Downloads/K23CNT1_NguyenQuangTam_NetCore-main/K23CNT1_NguyenQuangTam_NetCore-main/Lab03/Lab03/Views/Shared/NxvError.cshtml]
+[D:/XuanVinh-K23CNT1-NetCore/Lab03/Lab03/Views/Shared/NxvError.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE54dkVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Downloads/K23CNT1_NguyenQuangTam_NetCore-main/K23CNT1_NguyenQuangTam_NetCore-main/Lab03/Lab03/Views/Shared/_NxvCategoryPartial.cshtml]
+[D:/XuanVinh-K23CNT1-NetCore/Lab03/Lab03/Views/Shared/_NxvCategoryPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OeHZDYXRlZ29yeVBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Downloads/K23CNT1_NguyenQuangTam_NetCore-main/K23CNT1_NguyenQuangTam_NetCore-main/Lab03/Lab03/Views/Shared/_NxvHotProduct.cshtml]
+[D:/XuanVinh-K23CNT1-NetCore/Lab03/Lab03/Views/Shared/_NxvHotProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OeHZIb3RQcm9kdWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Downloads/K23CNT1_NguyenQuangTam_NetCore-main/K23CNT1_NguyenQuangTam_NetCore-main/Lab03/Lab03/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/XuanVinh-K23CNT1-NetCore/Lab03/Lab03/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Downloads/K23CNT1_NguyenQuangTam_NetCore-main/K23CNT1_NguyenQuangTam_NetCore-main/Lab03/Lab03/Views/_ViewImports.cshtml]
+[D:/XuanVinh-K23CNT1-NetCore/Lab03/Lab03/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Downloads/K23CNT1_NguyenQuangTam_NetCore-main/K23CNT1_NguyenQuangTam_NetCore-main/Lab03/Lab03/Views/_ViewStart.cshtml]
+[D:/XuanVinh-K23CNT1-NetCore/Lab03/Lab03/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Downloads/K23CNT1_NguyenQuangTam_NetCore-main/K23CNT1_NguyenQuangTam_NetCore-main/Lab03/Lab03/Views/Shared/_NxvLayout.cshtml]
+[D:/XuanVinh-K23CNT1-NetCore/Lab03/Lab03/Views/Shared/_NxvLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OeHZMYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-syy3yk38bo

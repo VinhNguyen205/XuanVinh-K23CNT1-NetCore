@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\NxvLab06.props" />
+</Project>
