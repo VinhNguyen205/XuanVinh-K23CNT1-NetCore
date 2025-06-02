@@ -1,8 +1,8 @@
-# K23CNT1_NguyenQuangTam_NetCore
+# XuanVinh-K23CNT1-NetCore
 
 ## Giới thiệu
 Đây là repo phục vụ cho khóa học **Lập trình với công nghệ .NET Core** của lớp **K23CNT1**.  
-Người thực hiện: **Nguyễn Quang Tâm**
+Người thực hiện: **Nguyễn Xuân Vinh**
 
 ## Nội dung khóa học
 - Tổng quan về .NET Core
@@ -21,4 +21,4 @@ Người thực hiện: **Nguyễn Quang Tâm**
 ## Cách chạy project
 1. Clone repo về máy:
    ```bash
-   git clone https://github.com/nqtam6666/K23CNT1_NguyenQuangTam_NetCore.git
+   git clone https://github.com/nqtam6666/XuanVinh-K23CNT1-NetCore.git
