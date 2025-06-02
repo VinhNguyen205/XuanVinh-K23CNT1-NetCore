@@ -1,0 +1,78 @@
+﻿﻿@model IEnumerable<Lab07Session04.Models.NxvEmployee>
+
+@{
+    ViewData["Title"] = "NxvIndex";
+    Layout = "~/Views/Shared/_NxvLayout.cshtml";
+}
+
+<h1>ĐANH SÁCH NHÂN VIÊN</h1>
+
+<p>
+    <a asp-action="NxvCreate" class="btn btn-primary">Thêm mới</a>
+</p>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NxvId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NxvName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NxvBirthDay)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NxvEmail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NxvPhone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NxvSalary)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NxvStatus)
+            </th>
+            <th>Chức năng</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NxvId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NxvName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NxvBirthDay)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NxvEmail)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NxvPhone)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NxvSalary)
+                </td>
+                <td>
+                    @{
+                        if (item.NxvStatus==true){
+                            <span class="badge bg-success">Hoạt động</span>
+                        }else{
+                            <span class="badge bg-danger">Không hoạt động</span>
+                        }
+                    }
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "NxvEdit", new { id = item.NxvId }) |
+                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

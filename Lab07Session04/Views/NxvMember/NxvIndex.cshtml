@@ -1,0 +1,66 @@
+﻿﻿@model IEnumerable<Lab07Session04.Models.NxvMember>
+
+@{
+    ViewData["Title"] = "NxvIndex";
+    Layout = "~/Views/Shared/_NxvLayout.cshtml";
+}
+
+<h1>NxvIndex</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NxvId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NxvName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NxvUserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NxvPassword)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NxvEmail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NxvStatus)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NxvId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NxvName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NxvUserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NxvPassword)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NxvEmail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NxvStatus)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
