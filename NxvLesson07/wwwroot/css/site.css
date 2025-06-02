@@ -14,7 +14,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f7fa;
+    background: linear-gradient(135deg, #f5f7fa, #e9ecef);
     color: #333;
     margin-bottom: 60px;
     line-height: 1.6;
@@ -22,26 +22,30 @@ body {
 
 /* ====== Navbar Customization ====== */
 .navbar {
-    background: linear-gradient(to right, #4facfe, #00f2fe);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background: linear-gradient(90deg, #4facfe, #00d2fe);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    padding: 0.5rem 1rem;
 }
 
 .navbar-brand {
-    font-weight: bold;
+    font-weight: 700;
     color: #fff !important;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 1.25rem;
 }
 
 .navbar-nav .nav-link {
     color: #fff !important;
-    margin-left: 1rem;
+    margin-left: 1.5rem;
     font-weight: 500;
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
 }
 
     .navbar-nav .nav-link:hover {
-        color: #f1f1f1 !important;
-        text-decoration: underline;
+        color: #e0e0e0 !important;
+        border-bottom: 2px solid #fff;
+        text-decoration: none;
     }
 
 /* ====== Buttons ====== */
@@ -50,37 +54,46 @@ body {
 .btn-link.nav-link:focus,
 .form-control:focus,
 .form-check-input:focus {
-    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.2rem rgba(37, 140, 251, 0.5);
 }
 
 .btn-primary {
     background-color: #007bff;
     border-color: #007bff;
-    transition: background-color 0.2s ease-in-out;
+    border-radius: 0.6rem;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease-in-out;
 }
 
     .btn-primary:hover {
         background-color: #0056b3;
         border-color: #004ea1;
+        transform: translateY(-2px);
     }
 
 /* ====== Cards ====== */
 .card {
     border: none;
     border-radius: 1rem;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    overflow: hidden;
 }
 
     .card:hover {
-        transform: translateY(-5px);
+        transform: translateY(-8px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     }
+
+.card-body {
+    padding: 1.5rem;
+}
 
 /* ====== Footer ====== */
 footer {
-    background-color: #f8f9fa;
+    background: linear-gradient(90deg, #f8f9fa, #e9ecef);
     border-top: 1px solid #dee2e6;
-    padding: 20px 0;
+    padding: 1.5rem 0;
     text-align: center;
     font-size: 14px;
     color: #6c757d;
@@ -89,26 +102,47 @@ footer {
     footer a {
         color: #007bff;
         text-decoration: none;
+        transition: color 0.3s ease;
     }
 
         footer a:hover {
+            color: #0056b3;
             text-decoration: underline;
         }
 
 /* ====== Forms ====== */
 input, select, textarea {
-    border-radius: 0.4rem;
-    padding: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 0.6rem;
+    border: 1px solid #ced4da;
+    transition: border-color 0.3s ease;
 }
+
+    input:focus, select:focus, textarea:focus {
+        border-color: #007bff;
+        outline: none;
+    }
 
 /* ====== Utility Enhancements ====== */
 .section-title {
-    font-size: 1.75rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
-    color: #343a40;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    position: relative;
 }
 
+    .section-title::after {
+        content: '';
+        width: 50px;
+        height: 3px;
+        background: #007bff;
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
 .shadow-soft {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
 }
