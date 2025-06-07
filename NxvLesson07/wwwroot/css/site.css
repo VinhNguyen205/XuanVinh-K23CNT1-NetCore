@@ -1,0 +1,114 @@
+/* ====== Typography & Layout ====== */
+html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa;
+    color: #333;
+    margin-bottom: 60px;
+    line-height: 1.6;
+}
+
+/* ====== Navbar Customization ====== */
+.navbar {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #fff !important;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    margin-left: 1rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+    .navbar-nav .nav-link:hover {
+        color: #f1f1f1 !important;
+        text-decoration: underline;
+    }
+
+/* ====== Buttons ====== */
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.2s ease-in-out;
+}
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #004ea1;
+    }
+
+/* ====== Cards ====== */
+.card {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+/* ====== Footer ====== */
+footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+    footer a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+/* ====== Forms ====== */
+input, select, textarea {
+    border-radius: 0.4rem;
+    padding: 0.5rem;
+}
+
+/* ====== Utility Enhancements ====== */
+.section-title {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.shadow-soft {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}

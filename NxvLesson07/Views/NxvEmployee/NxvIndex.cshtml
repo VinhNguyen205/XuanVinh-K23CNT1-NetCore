@@ -1,0 +1,71 @@
+﻿@model IEnumerable<NxvLesson07.Models.NxvEmployee>
+
+@{
+    ViewData["Title"] = "Danh Sách Nhân Viên";
+}
+
+<h1>Danh Sách Nhân Viên</h1>
+
+<p>
+    <a asp-action="NxvCreate" class="btn btn-primary">Thêm Mới</a>
+</p>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NxvId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NxvName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NxvBirthDay)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NxvEmail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NxvPhone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NxvSalary)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NxvStatus)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NxvId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NxvName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NxvBirthDay)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NxvEmail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NxvPhone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NxvSalary)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NxvStatus)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "NxvEdit", new { id = item.NxvId }) |
+                @Html.ActionLink("Details", "NxvDetails", new {  id=item.NxvId  }) |
+                    @Html.ActionLink("Delete", "NxvDelete", new { id = item.NxvId })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

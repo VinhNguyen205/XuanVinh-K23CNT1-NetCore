@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\NxvLesson07.props" />
+</Project>
