@@ -7,60 +7,74 @@ namespace NetCoreMVCLAB5.Controllers
 {
     public class AccountController : Controller
     {
-        // GET: AccountController
+        // Lưu danh sách account tạm thời trong RAM
+        private static List<Account> _accounts = new List<Account>();
+
         // GET: Account
         public ActionResult Index()
         {
-            List<Account> accounts = new List<Account>();
-            return View(accounts);
-            }
-
-        // GET: AccountController/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
+            return View(_accounts); // Trả danh sách hiện tại
         }
 
-        // GET: AccountController/Create
+        // GET: Account/Create
         [HttpGet]
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: AccountController/Create
+        // POST: Account/Create
         [HttpPost]
         public IActionResult Create(Account account)
         {
             if (ModelState.IsValid)
             {
-                // Sau này sẽ lưu vào database, tạm thời chuyển về Index
+                // Gán ID tự động nếu cần
+                account.Id = _accounts.Count > 0 ? _accounts.Max(a => a.Id) + 1 : 1;
+                _accounts.Add(account); // Lưu vào danh sách tạm
+
                 return RedirectToAction("Index");
             }
 
-            return View(account); // Trả về form cùng lỗi
+            return View(account);
         }
 
-        // GET: AccountController/Edit/5
+        // GET: Account/Details/5
+        public ActionResult Details(int id)
+        {
+            var acc = _accounts.FirstOrDefault(a => a.Id == id);
+            if (acc == null) return NotFound();
+            return View(acc);
+        }
+
+        // GET: Account/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            var acc = _accounts.FirstOrDefault(a => a.Id == id);
+            if (acc == null) return NotFound();
+            return View(acc);
         }
 
-        // POST: AccountController/Edit/5
+        // POST: Account/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(int id, Account updated)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            var acc = _accounts.FirstOrDefault(a => a.Id == id);
+            if (acc == null) return NotFound();
+
+            acc.FullName = updated.FullName;
+            acc.Email = updated.Email;
+            acc.Phone = updated.Phone;
+            acc.Address = updated.Address;
+            acc.Avatar = updated.Avatar;
+            acc.Birthday = updated.Birthday;
+            acc.Password = updated.Password;
+            acc.Facebook = updated.Facebook;
+
+            return RedirectToAction(nameof(Index));
         }
+
         [AcceptVerbs("GET", "POST")]
         public IActionResult VerifyPhone(string phone)
         {
@@ -71,25 +85,24 @@ namespace NetCoreMVCLAB5.Controllers
             }
             return Json(true);
         }
-        // GET: AccountController/Delete/5
+
+        // GET: Account/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            var acc = _accounts.FirstOrDefault(a => a.Id == id);
+            if (acc == null) return NotFound();
+            return View(acc);
         }
 
-        // POST: AccountController/Delete/5
+        // POST: Account/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public ActionResult DeleteConfirmed(int id)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            var acc = _accounts.FirstOrDefault(a => a.Id == id);
+            if (acc != null) _accounts.Remove(acc);
+            return RedirectToAction(nameof(Index));
         }
     }
 }
+
